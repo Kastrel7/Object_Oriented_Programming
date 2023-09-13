@@ -12,7 +12,7 @@ public class FormattingVariables {
         int population2 = 68138484;
         double populationDensity2 = 270.7;
 
-        System.out.println(String.format("%-20s%-15s%s\n%-20s%-15s%s"
+        System.out.println(String.format("%-20s%-15s%s\n%-20s%-15s%s",
                 "Name","Population","Pop Density",
                 "----","----------","-----------"));
 

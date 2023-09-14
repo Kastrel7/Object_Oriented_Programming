@@ -10,7 +10,7 @@ public class Exc2 {
         
         System.out.println("=================================\n"+"\t\tCar Park Calculator\n"+"=================================\n");
 
-        double cost = 0;
+        double totalCost = 0;
         double hrs;
 
         System.out.print("Please enter the amount of time in hours you spent parking: ");
@@ -20,14 +20,14 @@ public class Exc2 {
             System.out.println("Error: you have entered an invalid time value ... exiting program");
             System.exit(0);
         } else if (hrs > 0 && hrs <= 1) {
-            cost = 0.60;
+            totalCost = hrs*0.6;
         } else if (hrs > 1 && hrs <= 3) {
-            cost = 0.50;
+            totalCost = ((hrs-1)*.5)+.6;
         } else if (hrs > 3) {
-            cost = 0.40;
+            totalCost = ((hrs-3)*.4)+1.6;
         }
 
 
-        System.out.println(String.format("Total cost of parking for %s hours is €%.2f",hrs,hrs*cost));
+        System.out.println(String.format("Total cost of parking for %s hours is €%.2f",hrs,totalCost));
     }
 }

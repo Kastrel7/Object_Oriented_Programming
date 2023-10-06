@@ -39,7 +39,7 @@ public class Exc3 {
 
             if (yesNo.equals("yes")) {
 
-                rollTheDice();
+                //rollTheDice();
                 games++;
                 switch(rollTheDice()){
                     case 'c':

@@ -1,4 +1,4 @@
-package Lab12.Exc2;
+package Lab12.Exc3;
 
 public class Student {
     private int id;
@@ -35,6 +35,6 @@ public class Student {
     }
 
     public String toString(){
-        return "";
+        return "Name: " + getName() + "\t\tID: " + getId() + "\t\tDepartment: " + getDepartment() + "\n";
     }
 }
